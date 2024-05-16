@@ -1,0 +1,107 @@
+ body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(90deg,pink,white,pink,white,pink);
+ }
+
+#image{
+    height: 500px;
+    width: 330px;
+    background-image:url(birthday.jpg);
+    background-size: cover;
+    border: 5px solid rgb(255, 255, 255);
+border-radius: 20px;
+transform: translateY(30px);
+
+ 
+   
+}
+#name1{
+    background-image: url(name1.png);
+    height: 40px;
+    width:100%;
+    display: block;
+    background-size: cover;
+}
+ #ballon1{
+    background-image: url(ballon1.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;display: flex;
+   margin-top: 500px;
+    transform: translateY(-300px);
+animation: margin 3s ease-in;
+scale:1.5;
+ 
+ }
+ #ballon2{
+    background-image: url(ballon2.png);
+    background-size: cover;
+    height: 100px;
+    width: 100px;display: flex;
+   margin-top: 500px;
+    transform: translateY(-300px);
+animation: margin 3s ease-in;
+scale:1.5;
+ }
+#ballon3{
+  background-image: url(ballon2.png);
+  background-size: cover;
+  height: 100px;
+  width: 100px;display: flex;
+  transform: translateY(-300px);
+  animation: margin 3s ease-in;
+  scale:1.5;
+}
+#ballon4{
+  background-image: url(ballon1.png);
+  background-size: cover;
+  height: 100px;
+  width: 100px;display: flex;
+  transform: translateY(-300px);
+  animation: margin 3s ease-in;
+  scale:1.5;
+}
+ @keyframes margin{
+  0%{
+    transform: translateY( 0px);
+  }
+  100%{
+    transform: translateY(-300px);
+  }
+ }
+ @media only screen and (max-width:450px){
+
+  #image{
+    height: 500px;
+    width: 150px;
+    background-image:url(birthday.jpg);
+    background-size:contain;
+    border: 5px solid rgb(255, 255, 255);
+border-radius: 20px;
+transform: translateY(30px);
+
+ 
+   
+}
+#name1{
+  background-image: url(name1.png);
+  height: 40px;
+  width:60%;
+  display: block;
+  background-size: contain;
+}
+#ballon1{
+  scale: 1;
+}
+#ballon2{
+  scale: 1;
+}
+#ballon3{
+  scale: 1;
+}
+#ballon4{
+  scale: 1;
+}
+ }
