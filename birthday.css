@@ -1,4 +1,4 @@
- body{
+  body{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -12,10 +12,13 @@
     background-size: cover;
     border: 5px solid rgb(255, 255, 255);
 border-radius: 20px;
-transform: translateY(30px);
-
- 
-   
+transform: translateY(30px);  
+}
+audio{
+  height: 20px;
+  width: 100px;
+  /* border-radius: 50%; */
+  color: blue;
 }
 #name1{
     background-image: url(name1.png);
@@ -74,7 +77,7 @@ scale:1.5;
  @media only screen and (max-width:450px){
 
   #image{
-    height: 500px;
+    height: 250px;
     width: 150px;
     background-image:url(birthday.jpg);
     background-size:contain;
@@ -87,10 +90,11 @@ transform: translateY(30px);
 }
 #name1{
   background-image: url(name1.png);
-  height: 40px;
+  height: 10px;
   width:60%;
   display: block;
   background-size: contain;
+  margin-left: 20px;
 }
 #ballon1{
   scale: 1;
