@@ -1,111 +1,221 @@
-  body{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: linear-gradient(90deg,pink,white,pink,white,pink);
+  body {
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background: linear-gradient(90deg, pink, white, pink, white, pink);
+ } 
+ header {    
+   height: 40px;
+   width: 100%;
+   display: flex;
+   justify-content: space-around;
+   position: fixed;
+   top: 0px;
  }
-
-#image{
-    height: 500px;
-    width: 330px;
-    background-image:url(birthday.jpg);
-    background-size: cover;
-    border: 5px solid rgb(255, 255, 255);
-border-radius: 20px;
-transform: translateY(30px);  
+.bulb{
+  height: 30px;
+  width: 20px;
+  background-image: url(bulb.png);
+  background-color:rgba(255, 166, 0, 0.649);
+  background-repeat: no-repeat;
+  border-radius: 50%;
+  background-size: 100%;
+  rotate: 180deg;
+  box-shadow: 10px 10px  25px rgb(255, 94, 0),-10px -10px  25px rgb(255, 94, 0) ;
+animation: bulb 2s ease-in-out infinite 3s;
 }
-audio{
-  height: 20px;
-  width: 100px;
-  /* border-radius: 50%; */
-  color: blue;
-}
-#name1{
-    background-image: url(name1.png);
-    height: 40px;
-    width:100%;
-    display: block;
-    background-size: cover;
-}
- #ballon1{
-    background-image: url(ballon1.png);
-    background-size: cover;
-    height: 100px;
-    width: 100px;display: flex;
-   margin-top: 500px;
-    transform: translateY(-300px);
-animation: margin 3s ease-in;
-scale:1.5;
- 
- }
- #ballon2{
-    background-image: url(ballon2.png);
-    background-size: cover;
-    height: 100px;
-    width: 100px;display: flex;
-   margin-top: 500px;
-    transform: translateY(-300px);
-animation: margin 3s ease-in;
-scale:1.5;
- }
-#ballon3{
-  background-image: url(ballon2.png);
-  background-size: cover;
-  height: 100px;
-  width: 100px;display: flex;
-  transform: translateY(-300px);
-  animation: margin 3s ease-in;
-  scale:1.5;
-}
-#ballon4{
-  background-image: url(ballon1.png);
-  background-size: cover;
-  height: 100px;
-  width: 100px;display: flex;
-  transform: translateY(-300px);
-  animation: margin 3s ease-in;
-  scale:1.5;
-}
- @keyframes margin{
+@keyframes bulb{
   0%{
-    transform: translateY( 0px);
+    box-shadow: 10px 10px  25px rgb(255, 94, 0),-10px -10px  25px rgb(255, 94, 0) ;
+  }
+  50%{
+    box-shadow: 10px 10px  36px rgb(255, 255, 255),-10px -10px  36px rgb(255, 255, 255) ;
   }
   100%{
-    transform: translateY(-300px);
+    box-shadow: 10px 10px  25px rgb(255, 94, 0),-10px -10px  25px rgb(255, 94, 0) ;
   }
+}
+ #image {
+   height: 500px;
+   width: 330px;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-image: url(birthday.jpg);
+   background-size: cover;
+   border: 5px solid rgb(255, 255, 255);
+   border-radius: 20px;
+   transform: translateY(30px);
  }
- @media only screen and (max-width:450px){
 
-  #image{
-    height: 250px;
-    width: 150px;
-    background-image:url(birthday.jpg);
-    background-size:contain;
-    border: 5px solid rgb(255, 255, 255);
-border-radius: 20px;
-transform: translateY(30px);
+ #eye {
+   background-image: url(eye.jpg);
+   background-size: 100%;
+   position: relative;
+   height: 70px;
+   width: 60%;
+   border-radius: 10px;
+   background-repeat: no-repeat;
+   box-shadow: 0 0 50px rgb(3, 3, 3);
+   border: 2px solid white;
+ }
 
- 
-   
+ audio {
+   height: 20px;
+   width: 100px;
+   /* border-radius: 50%; */
+   color: blue;
+ }
+
+ #name1 {
+   background-image: url(name1.png);
+   height: 40px;
+   width: 100%;
+   display: block;
+   background-size: cover;
+ }
+
+ #ballon1 {
+   background-image: url(ballon1.png);
+   background-size: cover;
+   height: 100px;
+   width: 100px;
+   display: flex;
+   margin-top: 500px;
+   transform: translateY(-300px);
+   animation: margin2 4s ease-in;
+   scale: 1.5;
+
+ }
+
+ #ballon2 {
+   background-image: url(ballon2.png);
+   background-size: cover;
+   height: 100px;
+   width: 100px;
+   display: flex;
+   margin-top: 500px;
+   transform: translateY(-300px);
+   animation: margin 4s ease-in;
+   scale: 1.5;
+ }
+
+ #ballon3 {
+   background-image: url(ballon2.png);
+   background-size: cover;
+   height: 100px;
+   width: 100px;
+   display: flex;
+   transform: translateY(-300px);
+   animation: margin2 4s ease-in;
+   scale: 1.5;
+ }
+
+ #ballon4 {
+   background-image: url(ballon1.png);
+   background-size: cover;
+   height: 100px;
+   width: 100px;
+   display: flex;
+   transform: translateY(-300px);
+   animation: margin 4s ease-in;
+   scale: 1.5;
+ }
+
+ @keyframes margin {
+   0% {
+     transform: translateY(0px);
+     rotate: -360deg;
+   }
+
+   100% {
+     transform: translateY(-300px);
+     
+   }
+ }
+
+ @keyframes margin2 {
+  0% {
+    transform: translateY(0px);
+    rotate: 360deg;
+  }
+
+  100% {
+    transform: translateY(-300px);
+    
+  }
 }
-#name1{
-  background-image: url(name1.png);
-  height: 10px;
-  width:60%;
-  display: block;
-  background-size: contain;
-  margin-left: 20px;
-}
-#ballon1{
-  scale: 1;
-}
-#ballon2{
-  scale: 1;
-}
-#ballon3{
-  scale: 1;
-}
-#ballon4{
-  scale: 1;
-}
+ @media only screen and (max-width:450px) {
+
+   #image {
+     height: 250px;
+     width: 150px;
+     background-image: url(birthday.jpg);
+     background-size: contain;
+     border: 5px solid rgb(255, 255, 255);
+     border-radius: 20px;
+     transform: translateY(30px);
+     z-index: -6;
+
+
+
+   }
+
+   #name1 {
+     background-image: url(name1.png);
+     background-repeat: no-repeat;
+     height: 20px;
+     width: 80%;
+     display: block;
+     background-size: 100%;
+
+     transform: translateX(15px);
+   }
+
+   #ballon1 {
+     scale: 1;
+
+     z-index: 2;
+     position: relative;
+     left: 40px;
+   }
+
+   #ballon2 {
+     scale: 1;
+     position: relative;
+     right: 40px;
+
+   }
+
+   #ballon3 {
+     scale: 1;
+     z-index: 2;
+     position: relative;
+     left: 40px;
+   }
+
+   #ballon4 {
+     scale: 1;
+     position: relative;
+     right: 40px;
+
+
+   }
+
+   #eye {
+     background-image: url(eye.jpg);
+     background-size: 100%;
+     position: relative;
+     height: 36px;
+     width: 64%;
+     border-radius: 10px;
+     background-repeat: no-repeat;
+   }
+
+   header {
+     height: 13px;
+     width: 100%;
+     position: fixed;
+     top: 0px;
+   }
  }
