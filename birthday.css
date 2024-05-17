@@ -83,7 +83,7 @@ animation: bulb 2s ease-in-out infinite 3s;
    display: flex;
    margin-top: 500px;
    transform: translateY(-300px);
-   animation: margin2 8s ease-in;
+   animation: margin2 4s ease-in;
    scale: 1.5;
 
  }
@@ -96,7 +96,7 @@ animation: bulb 2s ease-in-out infinite 3s;
    display: flex;
    margin-top: 500px;
    transform: translateY(-300px);
-   animation: margin 8s ease-in;
+   animation: margin 4s ease-in;
    scale: 1.5;
  }
 
@@ -107,7 +107,7 @@ animation: bulb 2s ease-in-out infinite 3s;
    width: 100px;
    display: flex;
    transform: translateY(-300px);
-   animation: margin2 8s ease-in;
+   animation: margin2 4s ease-in;
    scale: 1.5;
  }
 
@@ -118,7 +118,7 @@ animation: bulb 2s ease-in-out infinite 3s;
    width: 100px;
    display: flex;
    transform: translateY(-300px);
-   animation: margin 8s ease-in;
+   animation: margin 4s ease-in;
    scale: 1.5;
  }
 
