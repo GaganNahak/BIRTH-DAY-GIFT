@@ -2,7 +2,7 @@
    display: flex;
    align-items: center;
    justify-content: center;
-   background: linear-gradient(90deg, pink, white, pink, white, pink);
+   background:repeating-radial-gradient(90deg, pink, white, pink, white, pink);
  }
 
  header {
