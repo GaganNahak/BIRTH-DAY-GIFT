@@ -240,7 +240,22 @@
      top: 0px;
    }
  }
-
+  #link{
+    height: 10%;
+    width: 10%;
+    font: size 0.3px;
+   position: absolute;
+   top: 500px;
+left: 140px;
+   z-index: 1;
+ 
+  }
+  button{
+    background-color: pink;
+    color: beige;
+    border:2px solid white;
+    border-radius: 20px;
+  }
  .zero {
    height: 0px;
    width: 0px;
